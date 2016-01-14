@@ -16,9 +16,11 @@ namespace PhonePop
 
 		public override void ViewWillLayoutSubviews ()
 		{
-			base.ViewWillLayoutSubviews ();
+			//base.ViewWillLayoutSubviews ();
 			//this.View.Superview.Bounds = new RectangleF (0, 0, 300, 300);
-
+			Console.WriteLine ("Superview = {0}", 
+				this.View.Superview.GetType ().FullName);
+			
 			this.View.Center = this.View.Window.Center;
 			this.View.Frame = new RectangleF (10, 10, 300, 300);
 		}

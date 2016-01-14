@@ -25,7 +25,7 @@ namespace PhonePop
 
 		partial void PopupViewButton_TouchUpInside (UIButton sender)
 		{
-
+			PresentNotice();
 		}
 		public void PresetAlert()
 		{
@@ -40,6 +40,10 @@ namespace PhonePop
 			var id = "NoticeViewController";
 			var vc = (NoticeViewController)
 				Storyboard.InstantiateViewController(id);
+			vc.ModalTransitionStyle = UIModalTransitionStyle.CrossDissolve;
+
+			vc.ModalPresentationStyle = UIModalPresentationStyle.OverCurrentContext;
+
 			PresentViewController(vc, true,null);
 		}
 		public void PresentMessage()
