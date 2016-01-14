@@ -121,6 +121,11 @@
       <DependentUpon>SelectionViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuTable.cs" />
+    <Compile Include="ButtonMenuViewController.cs" />
+    <Compile Include="ButtonMenuViewController.designer.cs">
+      <DependentUpon>ButtonMenuViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ButtonMenu.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Insights.1.10.6\build\Xamarin.iOS10\Xamarin.Insights.targets" Condition="Exists('..\packages\Xamarin.Insights.1.10.6\build\Xamarin.iOS10\Xamarin.Insights.targets')" />

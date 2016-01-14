@@ -25,9 +25,14 @@ namespace PhonePop
 
 		partial void PopupViewButton_TouchUpInside (UIButton sender)
 		{
-			PushSelection();
+			PresentButonMenu();
 		}
 
+		public void PresentButonMenu()
+		{
+			var vc = Storyboard.InstantiateViewController("ButtonMenuViewController");
+			PresentViewController(vc, true,null);
+		}
 		public void PushSelection(){
 			var vc = Storyboard.InstantiateViewController("SelectionViewController");
 			if (NavigationController != null)

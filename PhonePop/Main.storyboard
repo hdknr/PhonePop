@@ -176,7 +176,7 @@
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="144" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="177" y="64" width="198" height="211"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="145" rowHeight="20">
                                         <rect key="frame" x="0.0" y="22" width="198" height="20"/>
@@ -216,7 +216,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="114" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="685" y="422"/>
+            <point key="canvasLocation" x="22" y="423"/>
+        </scene>
+        <scene sceneID="160">
+            <objects>
+                <viewController id="161" sceneMemberID="viewController" customClass="ButtonMenuViewController" storyboardIdentifier="ButtonMenuViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="158"/>
+                        <viewControllerLayoutGuide type="bottom" id="159"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="162">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedRGB" red="1" green="0" blue="0" alpha="1"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="165" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="29" width="375" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="166" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                        <rect key="frame" x="335" y="9" width="31" height="30"/>
+                                        <state key="normal" title="Button" image="sports.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="MenuButton_TouchUpInside:" destination="161" id="175" eventType="touchUpInside"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="MenuButton" destination="166" id="name-outlet-166"/>
+                        <outlet property="HeaderView" destination="165" id="name-outlet-165"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="163" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="780" y="1186"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
