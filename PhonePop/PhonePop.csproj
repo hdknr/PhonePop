@@ -108,6 +108,10 @@
     <Compile Include="MessageViewController.designer.cs">
       <DependentUpon>MessageViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="NoticeViewController.cs" />
+    <Compile Include="NoticeViewController.designer.cs">
+      <DependentUpon>NoticeViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Insights.1.10.6\build\Xamarin.iOS10\Xamarin.Insights.targets" Condition="Exists('..\packages\Xamarin.Insights.1.10.6\build\Xamarin.iOS10\Xamarin.Insights.targets')" />

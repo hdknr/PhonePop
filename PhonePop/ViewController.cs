@@ -22,12 +22,13 @@ namespace PhonePop
 			// Release any cached data, images, etc that aren't in use.
 		}
 
-		partial void PopupViewButton_TouchUpInside (UIButton sender)
+
+		public void PresentMessage()
 		{
 			var id = "MessageViewController";
 			var vc = (MessageViewController)
-					Storyboard.InstantiateViewController(id);
-		
+				Storyboard.InstantiateViewController(id);
+
 
 			if( vc.ModalTransitionStyle == UIModalTransitionStyle.CoverVertical )
 			{
@@ -44,6 +45,15 @@ namespace PhonePop
 						.Show();
 				}
 			);
+		}
+		partial void PopupViewButton_TouchUpInside (UIButton sender)
+		{
+			// PresentMessage();
+
+			var id = "NoticeViewController";
+			var vc = (NoticeViewController)
+				Storyboard.InstantiateViewController(id);
+			PresentViewController(vc, true,null);
 		}
 	}
 }
