@@ -10,5 +10,12 @@ namespace PhonePop
 		public MessageViewController (IntPtr handle) : base (handle)
 		{
 		}
+
+		partial void CloseButton_TouchUpInside (UIButton sender)
+		{
+			// Close Modal
+			// http://furuya02.hatenablog.com/entry/2014/07/02/052557
+			DismissViewController(true, null);
+		}
 	}
 }

@@ -16,10 +16,22 @@ namespace PhonePop
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton CloseButton { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UILabel MessageLabel { get; set; }
+
+		[Action ("CloseButton_TouchUpInside:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void CloseButton_TouchUpInside (UIButton sender);
 
 		void ReleaseDesignerOutlets ()
 		{
+			if (CloseButton != null) {
+				CloseButton.Dispose ();
+				CloseButton = null;
+			}
 			if (MessageLabel != null) {
 				MessageLabel.Dispose ();
 				MessageLabel = null;

@@ -28,8 +28,9 @@ namespace PhonePop
 			var vc = (MessageViewController)
 					Storyboard.InstantiateViewController(id);
 		
-			Console.WriteLine("Popup Button Touched:{0}", 
-				vc.GetType().FullName);
+			// Modal
+			// http://furuya02.hatenablog.com/entry/2014/07/02/052557
+			PresentViewController(vc, true, null);
 		}
 	}
 }
