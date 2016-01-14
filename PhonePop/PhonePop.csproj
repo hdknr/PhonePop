@@ -116,10 +116,21 @@
     <Compile Include="LurkViewController.designer.cs">
       <DependentUpon>LurkViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="SelectionViewController.cs" />
+    <Compile Include="SelectionViewController.designer.cs">
+      <DependentUpon>SelectionViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuTable.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Insights.1.10.6\build\Xamarin.iOS10\Xamarin.Insights.targets" Condition="Exists('..\packages\Xamarin.Insights.1.10.6\build\Xamarin.iOS10\Xamarin.Insights.targets')" />
   <ItemGroup>
     <BundleResource Include="Resources\close_button.png" />
+    <BundleResource Include="Resources\basket.png" />
+    <BundleResource Include="Resources\rugby.png" />
+    <BundleResource Include="Resources\tennis.png" />
+    <BundleResource Include="Resources\soccer.png" />
+    <BundleResource Include="Resources\volley.png" />
+    <BundleResource Include="Resources\sports.png" />
   </ItemGroup>
 </Project>
