@@ -28,6 +28,13 @@ namespace PhonePop
 			var vc = (MessageViewController)
 					Storyboard.InstantiateViewController(id);
 		
+
+			if( vc.ModalTransitionStyle == UIModalTransitionStyle.CoverVertical )
+			{
+				// CoverVertical is default.
+				vc.ModalTransitionStyle = UIModalTransitionStyle.FlipHorizontal;
+			}
+
 			// Modal
 			// http://furuya02.hatenablog.com/entry/2014/07/02/052557
 			PresentViewController(vc, true, null);
