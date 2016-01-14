@@ -21,6 +21,11 @@ namespace PhonePop
 			base.DidReceiveMemoryWarning ();
 			// Release any cached data, images, etc that aren't in use.
 		}
+
+		partial void PopupViewButton_TouchUpInside (UIButton sender)
+		{
+			Console.WriteLine("Popup Button Touched");
+		}
 	}
 }
 
