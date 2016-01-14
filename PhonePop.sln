@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhonePop", "PhonePop\PhonePop.csproj", "{FE968811-60E1-4640-889D-A766C78DD7BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE968811-60E1-4640-889D-A766C78DD7BC}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{FE968811-60E1-4640-889D-A766C78DD7BC}.Debug|iPhone.Build.0 = Debug|iPhone
+		{FE968811-60E1-4640-889D-A766C78DD7BC}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{FE968811-60E1-4640-889D-A766C78DD7BC}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{FE968811-60E1-4640-889D-A766C78DD7BC}.Release|iPhone.ActiveCfg = Release|iPhone
+		{FE968811-60E1-4640-889D-A766C78DD7BC}.Release|iPhone.Build.0 = Release|iPhone
+		{FE968811-60E1-4640-889D-A766C78DD7BC}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{FE968811-60E1-4640-889D-A766C78DD7BC}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+EndGlobal
