@@ -37,7 +37,13 @@ namespace PhonePop
 
 			// Modal
 			// http://furuya02.hatenablog.com/entry/2014/07/02/052557
-			PresentViewController(vc, true, null);
+			PresentViewController(vc, true, 
+				() =>{
+					// Here is action executed after View Controller show up
+					(new UIAlertView("Hello", "Are you fine?", null, null, "OK"))
+						.Show();
+				}
+			);
 		}
 	}
 }
