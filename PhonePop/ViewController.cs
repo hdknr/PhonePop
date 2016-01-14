@@ -24,7 +24,12 @@ namespace PhonePop
 
 		partial void PopupViewButton_TouchUpInside (UIButton sender)
 		{
-			Console.WriteLine("Popup Button Touched");
+			var id = "MessageViewController";
+			var vc = (MessageViewController)
+					Storyboard.InstantiateViewController(id);
+		
+			Console.WriteLine("Popup Button Touched:{0}", 
+				vc.GetType().FullName);
 		}
 	}
 }
