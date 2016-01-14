@@ -23,6 +23,25 @@ namespace PhonePop
 		}
 
 
+		partial void PopupViewButton_TouchUpInside (UIButton sender)
+		{
+
+		}
+		public void PresetAlert()
+		{
+			UIAlertView alert = new UIAlertView () { 
+				Title = "alert title", Message = "this is a simple alert"
+			};
+			alert.AddButton("OK");
+			alert.Show ();
+		}
+		public void PresentNotice()
+		{
+			var id = "NoticeViewController";
+			var vc = (NoticeViewController)
+				Storyboard.InstantiateViewController(id);
+			PresentViewController(vc, true,null);
+		}
 		public void PresentMessage()
 		{
 			var id = "MessageViewController";
@@ -46,15 +65,7 @@ namespace PhonePop
 				}
 			);
 		}
-		partial void PopupViewButton_TouchUpInside (UIButton sender)
-		{
-			// PresentMessage();
 
-			var id = "NoticeViewController";
-			var vc = (NoticeViewController)
-				Storyboard.InstantiateViewController(id);
-			PresentViewController(vc, true,null);
-		}
 	}
 }
 
