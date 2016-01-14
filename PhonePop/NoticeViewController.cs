@@ -27,8 +27,9 @@ namespace PhonePop
 
 		partial void CloseButton_TouchUpInside (UIButton sender)
 		{
+			this.ModalTransitionStyle = 
+				UIModalTransitionStyle.CrossDissolve;
 			DismissViewController(true, null);
-
 		}
 	}
 }

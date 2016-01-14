@@ -40,9 +40,12 @@ namespace PhonePop
 			var id = "NoticeViewController";
 			var vc = (NoticeViewController)
 				Storyboard.InstantiateViewController(id);
-			vc.ModalTransitionStyle = UIModalTransitionStyle.CrossDissolve;
 
-			vc.ModalPresentationStyle = UIModalPresentationStyle.OverCurrentContext;
+			//vc.ModalTransitionStyle = UIModalTransitionStyle.CrossDissolve;
+
+			// http://marunouchi-tech.i-studio.co.jp/506/
+			vc.ModalPresentationStyle = 
+					UIModalPresentationStyle.OverCurrentContext;
 
 			PresentViewController(vc, true,null);
 		}
