@@ -124,8 +124,37 @@
             </objects>
             <point key="canvasLocation" x="828" y="4"/>
         </scene>
+        <scene sceneID="97">
+            <objects>
+                <viewController id="98" sceneMemberID="viewController" customClass="LurkViewController" storyboardIdentifier="LurkViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="95"/>
+                        <viewControllerLayoutGuide type="bottom" id="96"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="99">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="102" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="31" y="50" width="314" height="240"/>
+                                <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedRGB" red="0.6" green="0.4" blue="0.2" alpha="1"/>
+                            </view>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="ContentView" destination="102" id="name-outlet-102"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="100" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="14"/>
+        </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedScreenMetrics key="destination" type="retina47"/>
     </simulatedMetricsContainer>
+    <resources>
+        <image name="close_button.png" width="33" height="33"/>
+    </resources>
 </document>

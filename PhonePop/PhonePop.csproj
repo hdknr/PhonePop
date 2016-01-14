@@ -112,7 +112,14 @@
     <Compile Include="NoticeViewController.designer.cs">
       <DependentUpon>NoticeViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="LurkViewController.cs" />
+    <Compile Include="LurkViewController.designer.cs">
+      <DependentUpon>LurkViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Insights.1.10.6\build\Xamarin.iOS10\Xamarin.Insights.targets" Condition="Exists('..\packages\Xamarin.Insights.1.10.6\build\Xamarin.iOS10\Xamarin.Insights.targets')" />
+  <ItemGroup>
+    <BundleResource Include="Resources\close_button.png" />
+  </ItemGroup>
 </Project>

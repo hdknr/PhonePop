@@ -25,8 +25,9 @@ namespace PhonePop
 
 		partial void PopupViewButton_TouchUpInside (UIButton sender)
 		{
-			PresentNotice();
+			PresentLurk();
 		}
+
 		public void PresetAlert()
 		{
 			UIAlertView alert = new UIAlertView () { 
@@ -34,6 +35,18 @@ namespace PhonePop
 			};
 			alert.AddButton("OK");
 			alert.Show ();
+		}
+		public void PresentLurk()
+		{
+			var id = "LurkViewController";
+			var vc = (LurkViewController)
+				Storyboard.InstantiateViewController(id);
+
+			// http://marunouchi-tech.i-studio.co.jp/506/
+			vc.ModalPresentationStyle = 
+				UIModalPresentationStyle.OverCurrentContext;
+
+			PresentViewController(vc, true,null);
 		}
 		public void PresentNotice()
 		{
