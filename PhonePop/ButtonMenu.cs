@@ -14,7 +14,7 @@ namespace PhonePop
 
 		protected bool _show = false;
 		protected List<object> _menu;
-		protected UIView _parent = null;
+		protected UIView _parent = null;	
 		protected List<UIButton> _buttons = new List<UIButton>();
 		protected CGRect _first_rect;
 
