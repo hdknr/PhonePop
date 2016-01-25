@@ -25,12 +25,17 @@ namespace PhonePop
 
 		partial void PopupViewButton_TouchUpInside (UIButton sender)
 		{
+			PresentNotice();
+//			PresentLurk();
+//			PresentAlert();
+//			PushSelection();
 //			PresentButonMenu();
-			ProfileView();
+//			ProfileView();
 		}
 
 		public void ProfileView()
 		{
+			// XIB 
 			PresentViewController (new ProfileViewController (), true, null);
 		}
 		public void PresentButonMenu()
@@ -48,7 +53,7 @@ namespace PhonePop
 		}
 
 
-		public void PresetAlert()
+		public void PresentAlert()
 		{
 			UIAlertView alert = new UIAlertView () { 
 				Title = "alert title", Message = "this is a simple alert"

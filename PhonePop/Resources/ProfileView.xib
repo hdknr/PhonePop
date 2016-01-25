@@ -48,13 +48,4 @@
             <point key="canvasLocation" x="79" y="349"/>
         </view>
     </objects>
-    <resources>
-        <image name="close_button.png" width="33" height="33"/>
-        <image name="basket.png" width="64" height="64"/>
-        <image name="rugby.png" width="64" height="64"/>
-        <image name="tennis.png" width="64" height="64"/>
-        <image name="soccer.png" width="64" height="64"/>
-        <image name="volley.png" width="64" height="64"/>
-        <image name="sports.png" width="64" height="64"/>
-    </resources>
 </document>
