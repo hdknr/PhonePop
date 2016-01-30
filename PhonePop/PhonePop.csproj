@@ -94,6 +94,7 @@
     <InterfaceDefinition Include="Resources\ProfileView.xib" />
     <InterfaceDefinition Include="ProfileViewController.xib" />
     <InterfaceDefinition Include="Resources\WebContentView.xib" />
+    <InterfaceDefinition Include="WebContentViewController.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -140,6 +141,10 @@
     <Compile Include="WebContentView.cs" />
     <Compile Include="WebContentView.designer.cs">
       <DependentUpon>WebContentView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebContentViewController.cs" />
+    <Compile Include="WebContentViewController.designer.cs">
+      <DependentUpon>WebContentViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
