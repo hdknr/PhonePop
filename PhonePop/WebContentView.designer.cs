@@ -11,26 +11,18 @@ using UIKit;
 
 namespace PhonePop
 {
-	[Register ("ProfileView")]
-	partial class ProfileView
+	[Register ("WebContentView")]
+	partial class WebContentView
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UIButton CloseButton { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel TitleLabel { get; set; }
+		UIWebView ContentHtml { get; set; }
 
 		void ReleaseDesignerOutlets ()
 		{
-			if (CloseButton != null) {
-				CloseButton.Dispose ();
-				CloseButton = null;
-			}
-			if (TitleLabel != null) {
-				TitleLabel.Dispose ();
-				TitleLabel = null;
+			if (ContentHtml != null) {
+				ContentHtml.Dispose ();
+				ContentHtml = null;
 			}
 		}
 	}

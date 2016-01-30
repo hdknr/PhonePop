@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="1">
+        <view contentMode="scaleToFill" id="1" customClass="WebContentView">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -23,6 +23,18 @@
                 <constraint firstItem="K4b-mf-VrN" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="f9o-uG-jub"/>
                 <constraint firstItem="K4b-mf-VrN" firstAttribute="width" secondItem="1" secondAttribute="width" id="h6y-wo-WYT"/>
             </constraints>
+            <connections>
+                <outlet property="ContentHtml" destination="K4b-mf-VrN" id="name-outlet-K4b-mf-VrN"/>
+            </connections>
         </view>
     </objects>
+    <resources>
+        <image name="close_button.png" width="33" height="33"/>
+        <image name="basket.png" width="64" height="64"/>
+        <image name="rugby.png" width="64" height="64"/>
+        <image name="tennis.png" width="64" height="64"/>
+        <image name="soccer.png" width="64" height="64"/>
+        <image name="volley.png" width="64" height="64"/>
+        <image name="sports.png" width="64" height="64"/>
+    </resources>
 </document>
