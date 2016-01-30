@@ -19,7 +19,7 @@ namespace PhonePop
 			v.Frame = View.Frame;
 			View.AddSubview (v);
 
-			v.CloseButton.TouchUpInside += (object sender, EventArgs e) => {
+			v.Button.TouchUpInside += (object sender, EventArgs e) => {
 				DismissViewController(true, ()=>{});
 			};
 		}

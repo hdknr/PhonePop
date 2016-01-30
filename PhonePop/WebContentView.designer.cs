@@ -16,7 +16,7 @@ namespace PhonePop
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UIWebView ContentHtml { get; set; }
+		 UIWebView ContentHtml { get;  set; }
 
 		void ReleaseDesignerOutlets ()
 		{

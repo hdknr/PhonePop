@@ -30,7 +30,15 @@ namespace PhonePop
 //			PresentAlert();
 //			PushSelection();
 //			PresentButonMenu();
-			ProfileView();
+//			ProfileView();
+			WebContentView();
+
+		}
+
+		public void WebContentView()
+		{
+			PresentViewController (new WebContentViewController (), true, null);
+
 		}
 
 		public void ProfileView()

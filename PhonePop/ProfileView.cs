@@ -9,6 +9,8 @@ namespace PhonePop
 {
 	partial class ProfileView : UIView
 	{
+		public UIButton  Button { get { return CloseButton; } }
+
 		public ProfileView (IntPtr handle) : base (handle)
 		{
 		}
