@@ -25,12 +25,12 @@ namespace PhonePop
 
 		partial void PopupViewButton_TouchUpInside (UIButton sender)
 		{
-			PresentNotice();
+//			PresentNotice();
 //			PresentLurk();
 //			PresentAlert();
 //			PushSelection();
 //			PresentButonMenu();
-//			ProfileView();
+			ProfileView();
 		}
 
 		public void ProfileView()

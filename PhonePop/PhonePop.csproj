@@ -93,7 +93,6 @@
     <InterfaceDefinition Include="Main.storyboard" />
     <InterfaceDefinition Include="Resources\ProfileView.xib" />
     <InterfaceDefinition Include="ProfileViewController.xib" />
-    <InterfaceDefinition Include="Resources\ProfileDialog.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
