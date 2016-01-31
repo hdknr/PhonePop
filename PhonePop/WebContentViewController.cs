@@ -38,7 +38,18 @@ namespace PhonePop
 
 		void SetupHtml()
 		{
-			HtmlView.Html.Delegate = new MyContentView (this);
+			var dialog_delegete  = new MyContentView (this);
+			dialog_delegete.OnNavigating += (
+				object sender, 
+				NSUrlRequest request, 
+				UIWebViewNavigationType naviType) => {
+				if (request.Url.AbsoluteString.IndexOf ("close") >= 0) {
+					this.DismissViewController (true, () => {});
+				}
+			};
+
+		
+			HtmlView.Html.Delegate = dialog_delegete;
 
 			string contentDirectoryPath =
 				System.IO.Path.Combine (NSBundle.MainBundle.BundlePath, "");
@@ -51,6 +62,11 @@ namespace PhonePop
 
 		public  class MyContentView : UIWebViewDelegate
 		{
+			public delegate void OnNavigatingEvent(
+				object sender, NSUrlRequest request,UIWebViewNavigationType naviType );
+			public event OnNavigatingEvent OnNavigating;
+			public bool ForceLoading {get;set; } = true;
+
 			WebContentViewController Controller {get;set;}
 
 			public MyContentView(WebContentViewController controller)
@@ -65,13 +81,16 @@ namespace PhonePop
 			{
 				Console.WriteLine (">>>>> URL {0}", request.Url.ToString ());
 
-				//				return OnNavigated(request.u
-				if (request.Url.AbsoluteString.EndsWith ("#close")) {
-					Controller.DismissViewController (true, () => {
-					});
+				if (OnNavigating != null) {
+					OnNavigating (webView, request, navigationType);
 				}
+//				//				return OnNavigated(request.u
+//				if (request.Url.AbsoluteString.EndsWith ("#close")) {
+//					Controller.DismissViewController (true, () => {
+//					});
+//				}
 				Console.WriteLine ("@@@@@@ {0}", request.Url.AbsoluteString);
-				return true;
+				return ForceLoading;
 			}
 
 		}
